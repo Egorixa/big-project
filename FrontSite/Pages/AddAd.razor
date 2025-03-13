@@ -1,0 +1,171 @@
+@page "/add-ad"
+@using System.Text.Json
+@using Blazored.LocalStorage
+@using FrontSite.Models
+@using FrontSite.Services
+@inject AdService AdService
+@inject NavigationManager Navigation
+@inject ILocalStorageService LocalStorage
+
+<PageTitle>Добавить объявление</PageTitle>
+
+<h3 class="text-center text-orange">Добавить объявление</h3>
+
+@if (!isUserLoggedIn)
+{
+    <p class="text-center text-danger">Для того чтобы добавлять объявления, пожалуйста, войдите в систему.</p>
+    <div class="text-center">
+        <NavLink class="btn btn-warning" href="/login">Войти</NavLink>
+    </div>
+}
+else
+{
+    <div class="ad-form">
+        <input @bind="newAd.Title" placeholder="Заголовок" class="form-control" />
+        <textarea @bind="newAd.Description" placeholder="Описание" class="form-control" rows="4"></textarea>
+        <input @bind="newAd.Price" placeholder="Цена" class="form-control" type="number" />
+
+        <button class="btn btn-success" @onclick="CreateAd">Создать</button>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <p class="error-message">@errorMessage</p>
+        }
+
+        @if (isAdCreated)
+        {
+            <p class="success-message">Объявление успешно добавлено!</p>
+        }
+    </div>
+}
+
+@code {
+    private Ad newAd = new() { Price = null };
+    private string errorMessage = string.Empty;
+    private bool isUserLoggedIn = false;
+    private bool isAdCreated = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var userToken = await LocalStorage.GetItemAsync<string>("user");
+        isUserLoggedIn = !string.IsNullOrEmpty(userToken);
+
+        if (!isUserLoggedIn)
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private async Task CreateAd()
+    {
+        errorMessage = string.Empty;
+        isAdCreated = false;
+        
+        if (string.IsNullOrWhiteSpace(newAd.Title) || !newAd.Title.All(c => char.IsLetterOrDigit(c) || c == ' '))
+        {
+            errorMessage = "Заголовок должен содержать только буквы, цифры и пробелы!";
+            return;
+        }
+        
+        if (string.IsNullOrWhiteSpace(newAd.Description) || newAd.Description.Length <= 5)
+        {
+            errorMessage = "Описание должно содержать больше 5 символов!";
+            return;
+        }
+        
+        if (newAd.Price.HasValue && newAd.Price <= 0)
+        {
+            errorMessage = "Цена должна быть больше 0!";
+            return;
+        }
+
+        newAd.CreatedAt = DateTime.Now;
+        
+        var userJson = await LocalStorage.GetItemAsync<string>("user");
+        if (!string.IsNullOrEmpty(userJson))
+        {
+            var user = JsonSerializer.Deserialize<User>(userJson);
+            if (user?.Id == null)
+            {
+                errorMessage = "Ошибка: не удалось получить ID пользователя!";
+                return;
+            }
+            newAd.UserId = user.Id;
+        }
+        else
+        {
+            errorMessage = "Ошибка: пользователь не найден!";
+            return;
+        }
+        
+        bool success = await AdService.CreateAdAsync(newAd);
+        if (success)
+        {
+            isAdCreated = true;
+            newAd = new Ad() { Price = null }; // Очистка формы после успешного добавления
+        }
+        else
+        {
+            errorMessage = "Ошибка при добавлении объявления!";
+        }
+    }
+}
+
+<style>
+    .ad-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff8e1;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ff6600;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .btn-success {
+        background-color: #ff6600;
+        border-color: #ff6600;
+    }
+
+    .btn-warning {
+        background-color: #ff8c00;
+        border-color: #ff8c00;
+    }
+
+    .error-message {
+        color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .success-message {
+        color: green;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h3 {
+        color: #ff6600;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .text-orange {
+        color: #ff6600;
+    }
+</style>

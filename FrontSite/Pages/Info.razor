@@ -1,0 +1,86 @@
+@page "/info"
+@inject NavigationManager Navigation
+
+<PageTitle>Информация</PageTitle>
+
+<h3 class="text-center text-orange">Информация о сервисе</h3>
+
+<div class="info-card">
+    <h4 class="text-orange">О команде GEK</h4>
+    <p>
+        Мы (команда GEK (Глеб, Егор и Кирилл)) стремимся улучшить жизнь студентов в университете. Мы создаем простые и удобные решения повседневных проблем.
+    </p>
+
+    <h4 class="text-orange">Для чего нужен этот сервис?</h4>
+    <p>
+        Этот сервис предназначен для создания и управления объявлениями. Он позволяет пользователям добавлять свои объявления, просматривать объявления других пользователей, а также откликаться на них. Мы стремимся сделать взаимодействие между пользователями максимально простым и быстрым.
+    </p>
+
+    <h4 class="text-orange">Как работает сервис?</h4>
+    <p>
+        Сервис работает через веб-интерфейс, где пользователи могут зарегистрироваться, войти в систему и создать свое объявление. Все данные хранятся в базе данных, а взаимодействие происходит через API.
+    </p>
+    
+    <h4 class="text-orange">About the GEK team</h4>
+    <p>
+        We are the GEK team (Gleb, Egor, and Kirill), aiming to improve the lives of university students. We create simple and convenient solutions for everyday problems.
+    </p>
+
+    <h4 class="text-orange">What is the purpose of this service?</h4>
+    <p>
+        This service is designed for creating and managing announcements. It allows users to add their own ads, view ads from other users, and respond to them. We strive to make the interaction between users as simple and quick as possible.
+    </p>
+
+    <h4 class="text-orange">How does the service work?</h4>
+    <p>
+        The service works through a web interface where users can register, log in, and create their own ads. All data is stored in the database, and interactions happen through the API.
+    </p>
+
+    <div class="text-center">
+        <button class="btn btn-warning" @onclick="NavigateToHome">Вернуться на главную</button>
+        <button class="btn btn-warning" @onclick="NavigateToHome">Go to Home</button>
+    </div>
+</div>
+
+@code {
+    private void NavigateToHome()
+    {
+        Navigation.NavigateTo("/");
+    }
+}
+
+<style>
+    .info-card {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff8e1;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        color: #333;
+    }
+
+    h3, h4 {
+        color: #ff6600;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .btn-warning {
+        background-color: #ff8c00;
+        border-color: #ff8c00;
+        color: white;
+    }
+
+    .btn-warning:hover {
+        background-color: #e07b00;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
