@@ -6,7 +6,7 @@ namespace StudyService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : Controller
+    public class UsersController : ControllerBase
     {
         private readonly UserRepository _userRepository;
 
@@ -19,13 +19,11 @@ namespace StudyService.Controllers
         [HttpPost("register")]
         public ActionResult<User> RegisterUser([FromBody] User user)
         {
-            // Проверка на пустые поля
             if (user == null || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
             {
                 return BadRequest("Email и пароль обязательны");
             }
 
-            // Проверка, существует ли пользователь с таким email
             if (_userRepository.GetUserByEmail(user.Email) != null)
             {
                 return Conflict("Пользователь с таким email уже существует");
@@ -41,5 +39,40 @@ namespace StudyService.Controllers
         {
             return Ok(_userRepository.GetAllUsers());
         }
+
+        // POST: api/users/login
+        [HttpPost("login")]
+        public ActionResult<User> Login([FromBody] LoginRequest loginRequest)
+        {
+            if (loginRequest == null || string.IsNullOrEmpty(loginRequest.Email) || string.IsNullOrEmpty(loginRequest.Password))
+            {
+                return BadRequest("Email и пароль обязательны");
+            }
+
+            var user = _userRepository.GetUserByEmail(loginRequest.Email);
+            if (user == null || user.Password != loginRequest.Password)
+            {
+                return Unauthorized("Неверный email или пароль");
+            }
+
+            // Возвращаем данные пользователя без пароля
+            return Ok(new
+            {
+                user.Id,
+                user.Name,
+                user.Surname,
+                user.Email,
+                user.Stage,
+                user.Course,
+                user.ProfileDescription
+            });
+        }
+    }
+
+    // Модель для запроса логина
+    public class LoginRequest
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
