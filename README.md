@@ -44,7 +44,7 @@
 - Фреймворк: ASP.NET Core
 - База данных: PostgreSQL
 - ORM: Entity Framework Core
-- Аутентификация: JWT (JSON Web Token)
+- Аутентификация: Blazor Local Storage
 
 ![Схема архитектуры](Pic.png)
 
