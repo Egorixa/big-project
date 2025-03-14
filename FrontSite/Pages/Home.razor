@@ -1,4 +1,7 @@
 ﻿@page "/"
+@using System.Text.Json
+@using FrontSite.Models
+@inject HttpClient Http
 
 <PageTitle>Главная</PageTitle>
 
@@ -13,10 +16,63 @@
         <NavLink class="btn btn-secondary" href="/register">Зарегистрироваться</NavLink>
     </div>
 
+    <div class="user-search">
+        <h3>Найти пользователя по ID</h3>
+        <input type="number" class="form-control user-input" @bind="searchUserId" placeholder="Введите ID пользователя" />
+        <button class="btn btn-orange" @onclick="FindUserById">Искать</button>
+
+        @if (searchedUser != null)
+        {
+            <div class="user-card">
+                <h4>@searchedUser.Name @searchedUser.Surname</h4>
+                <p><strong>Email:</strong> @searchedUser.Email</p>
+                <p><strong>Курс:</strong> @searchedUser.Course</p>
+                <p><strong>Этап обучения:</strong> @searchedUser.Stage</p>
+            </div>
+        }
+        else if (userNotFound)
+        {
+            <p class="not-found-message">Пользователь не найден.</p>
+        }
+    </div>
+
     <div class="home-footer">
         <p>Сделано с ❤️ для студентов!</p>
     </div>
 </div>
+
+@code {
+    private int searchUserId;
+    private User searchedUser;
+    private bool userNotFound = false;
+
+    private async Task FindUserById()
+    {
+        var usersJson = await Http.GetStringAsync("http://localhost:5027/api/users");
+
+        var users = JsonSerializer.Deserialize<List<User>>(usersJson);
+
+        if (users == null || !users.Any())
+        {
+            Console.WriteLine("Список пользователей пуст!");
+            userNotFound = true;
+            return;
+        }
+
+        searchedUser = users.FirstOrDefault(u => u.Id == searchUserId);
+        userNotFound = searchedUser == null;
+
+        if (searchedUser != null)
+        {
+            Console.WriteLine($"Найден пользователь: {searchedUser.Name} {searchedUser.Surname}");
+        }
+        else
+        {
+            Console.WriteLine($"Пользователь с ID {searchUserId} не найден!");
+        }
+    }
+
+}
 
 <style>
     .home-container {
@@ -26,7 +82,7 @@
         color: white;
         border-radius: 15px;
     }
-    
+
     .home-title {
         font-size: 3rem;
         font-weight: bold;
@@ -34,7 +90,7 @@
         text-transform: uppercase;
         color: #ff6600;
     }
-    
+
     .home-description {
         font-size: 1.2rem;
         color: #ff6600;
@@ -57,41 +113,81 @@
         display: inline-block;
         transition: all 0.3s ease;
     }
-    
+
     .btn-primary {
         background-color: #ff6600;
         color: white;
         border: none;
-        box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
     }
 
     .btn-primary:hover {
         background-color: #cc5200;
-        box-shadow: 0 6px 15px rgba(255, 102, 0, 0.5);
-        transform: translateY(-3px);
     }
 
     .btn-secondary {
         background-color: #ff8c00;
         color: white;
         border: none;
-        box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
     }
 
     .btn-secondary:hover {
         background-color: #e07b00;
-        box-shadow: 0 6px 15px rgba(255, 140, 0, 0.5);
-        transform: translateY(-3px);
     }
-    
+
     .home-footer {
         margin-top: 50px;
         font-size: 1rem;
         color: #ff6600;
         font-weight: 300;
     }
-    
-    .btn:hover {
-        cursor: pointer;
+
+    .user-search {
+        background: #fff8e1;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 30px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-search h3 {
+        color: #ff6600;
+    }
+
+    .user-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ff6600;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .btn-orange {
+        background-color: #ff6600;
+        color: white;
+        width: 100%;
+    }
+
+    .btn-orange:hover {
+        background-color: #cc5200;
+    }
+
+    .user-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .user-card h4 {
+        color: #ff6600;
+        margin-bottom: 10px;
+    }
+
+    .not-found-message {
+        color: red;
+        margin-top: 10px;
     }
 </style>

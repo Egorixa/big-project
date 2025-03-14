@@ -11,7 +11,7 @@ public class AdService
     {
         _http = http;
     }
-
+    
     public async Task<List<Ad>> GetAdsAsync()
     {
         try
@@ -26,7 +26,22 @@ public class AdService
             return new List<Ad>();
         }
     }
-
+    
+    public async Task<List<Ad>> GetUserAdsAsync(int userId)
+    {
+        try
+        {
+            var ads = await _http.GetFromJsonAsync<List<Ad>>($"http://localhost:5027/api/ads/user/{userId}");
+            Console.WriteLine($"Получено {ads?.Count} объявлений пользователя {userId}");
+            return ads ?? new List<Ad>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка загрузки API для пользователя {userId}: {ex.Message}");
+            return new List<Ad>();
+        }
+    }
+    
     public async Task<bool> CreateAdAsync(Ad ad)
     {
         try
@@ -38,6 +53,21 @@ public class AdService
         catch (Exception ex)
         {
             Console.WriteLine($"Ошибка отправки API: {ex.Message}");
+            return false;
+        }
+    }
+    
+    public async Task<bool> DeleteAdAsync(int adId, int userId)
+    {
+        try
+        {
+            var response = await _http.DeleteAsync($"http://localhost:5027/api/ads/{adId}?userId={userId}");
+            Console.WriteLine($"DELETE статус: {response.StatusCode}");
+            return response.IsSuccessStatusCode;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка удаления API: {ex.Message}");
             return false;
         }
     }
