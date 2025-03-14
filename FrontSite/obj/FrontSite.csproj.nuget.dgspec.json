@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/egorkuryukin/develop/vs_code/projects_.NET/example_project/frontend/FrontSite/FrontSite/FrontSite.csproj": {}
+    "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj": {}
   },
   "projects": {
-    "/Users/egorkuryukin/develop/vs_code/projects_.NET/example_project/frontend/FrontSite/FrontSite/FrontSite.csproj": {
+    "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/egorkuryukin/develop/vs_code/projects_.NET/example_project/frontend/FrontSite/FrontSite/FrontSite.csproj",
+        "projectUniqueName": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj",
         "projectName": "FrontSite",
-        "projectPath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/example_project/frontend/FrontSite/FrontSite/FrontSite.csproj",
+        "projectPath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj",
         "packagesPath": "/Users/egorkuryukin/.nuget/packages/",
-        "outputPath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/example_project/frontend/FrontSite/FrontSite/obj/",
+        "outputPath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/egorkuryukin/.nuget/NuGet/NuGet.Config"
