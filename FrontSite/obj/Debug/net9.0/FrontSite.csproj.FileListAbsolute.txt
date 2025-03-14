@@ -2286,10 +2286,10 @@
 /Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/refint/FrontSite.dll
 /Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/FrontSite.pdb
 /Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/ref/FrontSite.dll
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.kxcfa14qx8.pdb
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.eoqaztu5rj.wasm
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.eoqaztu5rj.wasm.gz
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.kxcfa14qx8.pdb.gz
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-eoqaztu5rj.gz
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-kxcfa14qx8.gz
-/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-avhjj7b3f8.gz
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.26pnbcnfpc.pdb
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.n5iwpbdk0e.wasm
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.n5iwpbdk0e.wasm.gz
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.26pnbcnfpc.pdb.gz
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-n5iwpbdk0e.gz
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-26pnbcnfpc.gz
+/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-cwx72ekqdf.gz

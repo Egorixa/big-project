@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using System.Text.Json;
 using FrontSite.Models;
 
 namespace FrontSite.Services;
@@ -31,9 +32,14 @@ public class AdService
     {
         try
         {
-            var ads = await _http.GetFromJsonAsync<List<Ad>>($"http://localhost:5027/api/ads/user/{userId}");
-            Console.WriteLine($"Получено {ads?.Count} объявлений пользователя {userId}");
-            return ads ?? new List<Ad>();
+            var response = await _http.GetStringAsync($"http://localhost:5027/api/ads/");
+            
+            var ads = JsonSerializer.Deserialize<List<Ad>>(response);
+            
+            var userAds = ads?.Where(ad => ad.UserId == userId).ToList() ?? new List<Ad>();
+        
+            Console.WriteLine($"Получено {userAds.Count} объявлений для пользователя {userId}");
+            return userAds;
         }
         catch (Exception ex)
         {

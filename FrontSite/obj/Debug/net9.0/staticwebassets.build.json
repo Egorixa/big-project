@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cuz+cUu0c/EAWHEPQsjZFgFwKIZYvvY+giO04uTCp4Y=",
+  "Hash": "IK3H3EyCeiBE1S8Nv6//rRM/SCEBaMt18Sue18KNVho=",
   "Source": "FrontSite",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "avhjj7b3f8",
-      "Integrity": "NsAe9pSOFxQi6VtSDudo4fNNMDsBn0mk3Htmt2KhZxg=",
+      "Fingerprint": "cwx72ekqdf",
+      "Integrity": "XKE2HjTvdq52GFSWu5lTQobvqhkp6S6Y/VcZ1lCBfmk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/blazor.boot.json"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "kxcfa14qx8",
-      "Integrity": "OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ=",
+      "Fingerprint": "26pnbcnfpc",
+      "Integrity": "1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/FrontSite.pdb"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "eoqaztu5rj",
-      "Integrity": "jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI=",
+      "Fingerprint": "n5iwpbdk0e",
+      "Integrity": "FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/webcil/FrontSite.wasm"
@@ -5015,12 +5015,12 @@
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-eoqaztu5rj.gz",
+      "Identity": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-n5iwpbdk0e.gz",
       "SourceId": "FrontSite",
       "SourceType": "Computed",
       "ContentRoot": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/FrontSite#[.{fingerprint=eoqaztu5rj}]!.wasm.gz",
+      "RelativePath": "_framework/FrontSite#[.{fingerprint=n5iwpbdk0e}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5029,8 +5029,8 @@
       "RelatedAsset": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "20s2ruvchv",
-      "Integrity": "Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA=",
+      "Fingerprint": "oy9uld9bci",
+      "Integrity": "EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.wasm"
@@ -5519,7 +5519,7 @@
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/System.Data.DataSetExtensions.wasm"
     },
     {
-      "Identity": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-avhjj7b3f8.gz",
+      "Identity": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-cwx72ekqdf.gz",
       "SourceId": "FrontSite",
       "SourceType": "Computed",
       "ContentRoot": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/",
@@ -5533,8 +5533,8 @@
       "RelatedAsset": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jpft0f0yhy",
-      "Integrity": "Oe8tQo9SW+7vS9BJbYjBVIB5TIjcn9Unjtn2VMOeRX4=",
+      "Fingerprint": "kdmzi3f0ko",
+      "Integrity": "CIr8APAa1wIwN0Ofn5oYX+qGL3MNIY7HinjyTRYNsmg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json"
@@ -5624,12 +5624,12 @@
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/System.Collections.wasm"
     },
     {
-      "Identity": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-kxcfa14qx8.gz",
+      "Identity": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-26pnbcnfpc.gz",
       "SourceId": "FrontSite",
       "SourceType": "Computed",
       "ContentRoot": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/FrontSite#[.{fingerprint=kxcfa14qx8}]!.pdb.gz",
+      "RelativePath": "_framework/FrontSite#[.{fingerprint=26pnbcnfpc}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5638,8 +5638,8 @@
       "RelatedAsset": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rideruuowo",
-      "Integrity": "80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA=",
+      "Fingerprint": "6x4yy2njab",
+      "Integrity": "aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.pdb"
@@ -11230,7 +11230,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NsAe9pSOFxQi6VtSDudo4fNNMDsBn0mk3Htmt2KhZxg=\""
+          "Value": "\"XKE2HjTvdq52GFSWu5lTQobvqhkp6S6Y/VcZ1lCBfmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XKE2HjTvdq52GFSWu5lTQobvqhkp6S6Y/VcZ1lCBfmk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-cwx72ekqdf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000076289289"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13107"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CIr8APAa1wIwN0Ofn5oYX+qGL3MNIY7HinjyTRYNsmg=\""
         },
         {
           "Name": "Last-Modified",
@@ -11239,45 +11278,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NsAe9pSOFxQi6VtSDudo4fNNMDsBn0mk3Htmt2KhZxg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-avhjj7b3f8.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000076300931"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13105"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Oe8tQo9SW+7vS9BJbYjBVIB5TIjcn9Unjtn2VMOeRX4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:40:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -11293,19 +11293,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"NsAe9pSOFxQi6VtSDudo4fNNMDsBn0mk3Htmt2KhZxg=\""
+          "Value": "W/\"XKE2HjTvdq52GFSWu5lTQobvqhkp6S6Y/VcZ1lCBfmk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NsAe9pSOFxQi6VtSDudo4fNNMDsBn0mk3Htmt2KhZxg="
+          "Value": "sha256-XKE2HjTvdq52GFSWu5lTQobvqhkp6S6Y/VcZ1lCBfmk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-avhjj7b3f8.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/6b4ebbrbht-cwx72ekqdf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11314,7 +11314,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13105"
+          "Value": "13107"
         },
         {
           "Name": "Content-Type",
@@ -11322,11 +11322,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oe8tQo9SW+7vS9BJbYjBVIB5TIjcn9Unjtn2VMOeRX4=\""
+          "Value": "\"CIr8APAa1wIwN0Ofn5oYX+qGL3MNIY7HinjyTRYNsmg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:40:56 GMT"
+          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11344,7 +11344,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Oe8tQo9SW+7vS9BJbYjBVIB5TIjcn9Unjtn2VMOeRX4="
+          "Value": "sha256-CIr8APAa1wIwN0Ofn5oYX+qGL3MNIY7HinjyTRYNsmg="
         }
       ]
     },
@@ -13572,168 +13572,7 @@
       ]
     },
     {
-      "Route": "_framework/FrontSite.eoqaztu5rj.wasm",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "96533"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eoqaztu5rj"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/FrontSite.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/FrontSite.eoqaztu5rj.wasm",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-eoqaztu5rj.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000031255860"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31993"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eoqaztu5rj"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/FrontSite.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/FrontSite.eoqaztu5rj.wasm.gz",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-eoqaztu5rj.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31993"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "eoqaztu5rj"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/FrontSite.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/FrontSite.kxcfa14qx8.pdb",
+      "Route": "_framework/FrontSite.26pnbcnfpc.pdb",
       "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13743,7 +13582,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "57448"
+          "Value": "57472"
         },
         {
           "Name": "Content-Type",
@@ -13751,11 +13590,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ=\""
+          "Value": "\"1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13765,7 +13604,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kxcfa14qx8"
+          "Value": "26pnbcnfpc"
         },
         {
           "Name": "label",
@@ -13773,18 +13612,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ="
+          "Value": "sha256-1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA="
         }
       ]
     },
     {
-      "Route": "_framework/FrontSite.kxcfa14qx8.pdb",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-kxcfa14qx8.gz",
+      "Route": "_framework/FrontSite.26pnbcnfpc.pdb",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-26pnbcnfpc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000022390900"
+          "Quality": "0.000022398925"
         }
       ],
       "ResponseHeaders": [
@@ -13794,15 +13633,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44660"
+          "Value": "44644"
         },
         {
           "Name": "ETag",
-          "Value": "\"80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA=\""
+          "Value": "\"aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13822,13 +13661,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ=\""
+          "Value": "W/\"1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kxcfa14qx8"
+          "Value": "26pnbcnfpc"
         },
         {
           "Name": "label",
@@ -13836,13 +13675,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ="
+          "Value": "sha256-1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA="
         }
       ]
     },
     {
-      "Route": "_framework/FrontSite.kxcfa14qx8.pdb.gz",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-kxcfa14qx8.gz",
+      "Route": "_framework/FrontSite.26pnbcnfpc.pdb.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-26pnbcnfpc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13851,7 +13690,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44660"
+          "Value": "44644"
         },
         {
           "Name": "Content-Type",
@@ -13859,11 +13698,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA=\""
+          "Value": "\"aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13881,7 +13720,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kxcfa14qx8"
+          "Value": "26pnbcnfpc"
         },
         {
           "Name": "label",
@@ -13889,7 +13728,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA="
+          "Value": "sha256-aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/FrontSite.n5iwpbdk0e.wasm",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/bin/Debug/net9.0/wwwroot/_framework/FrontSite.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n5iwpbdk0e"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/FrontSite.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/FrontSite.n5iwpbdk0e.wasm",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-n5iwpbdk0e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000031079065"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32175"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n5iwpbdk0e"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/FrontSite.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/FrontSite.n5iwpbdk0e.wasm.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-n5iwpbdk0e.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32175"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n5iwpbdk0e"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/FrontSite.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E="
         }
       ]
     },
@@ -13904,7 +13904,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "57448"
+          "Value": "57472"
         },
         {
           "Name": "Content-Type",
@@ -13912,11 +13912,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ=\""
+          "Value": "\"1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13926,18 +13926,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ="
+          "Value": "sha256-1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA="
         }
       ]
     },
     {
       "Route": "_framework/FrontSite.pdb",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-kxcfa14qx8.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-26pnbcnfpc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000022390900"
+          "Quality": "0.000022398925"
         }
       ],
       "ResponseHeaders": [
@@ -13947,15 +13947,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44660"
+          "Value": "44644"
         },
         {
           "Name": "ETag",
-          "Value": "\"80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA=\""
+          "Value": "\"aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13975,19 +13975,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ=\""
+          "Value": "W/\"1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OJ3V8n1PAJ9Rlu0a2oHPGHoQUKJN+wtOE7QXqbgcDaQ="
+          "Value": "sha256-1lW8qV1vntmWFqaQzbFfczAXJmMqEO95aTjVjeohgkA="
         }
       ]
     },
     {
       "Route": "_framework/FrontSite.pdb.gz",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-kxcfa14qx8.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/72yxegd5y7-26pnbcnfpc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13996,7 +13996,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44660"
+          "Value": "44644"
         },
         {
           "Name": "Content-Type",
@@ -14004,11 +14004,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA=\""
+          "Value": "\"aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14026,7 +14026,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-80733dlmHCFVIQB2IrU7xta17OtKHEKzb1jItKuJHeA="
+          "Value": "sha256-aif08/BSG5EgJrdC4aNR2B2Fv1UwMylaIYJrPY2yCEg="
         }
       ]
     },
@@ -14041,7 +14041,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "96533"
+          "Value": "97045"
         },
         {
           "Name": "Content-Type",
@@ -14049,11 +14049,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI=\""
+          "Value": "\"FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14063,18 +14063,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI="
+          "Value": "sha256-FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE="
         }
       ]
     },
     {
       "Route": "_framework/FrontSite.wasm",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-eoqaztu5rj.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-n5iwpbdk0e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000031255860"
+          "Quality": "0.000031079065"
         }
       ],
       "ResponseHeaders": [
@@ -14084,15 +14084,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31993"
+          "Value": "32175"
         },
         {
           "Name": "ETag",
-          "Value": "\"Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA=\""
+          "Value": "\"EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14112,19 +14112,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI=\""
+          "Value": "W/\"FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jlw/RN3tI8Un1ADSEd5w9YfAXy44EL0sQm/0hT77SxI="
+          "Value": "sha256-FUdKS1aOtO7S53xCKtEI5YTp+jd5tQvko0GnOm5PMGE="
         }
       ]
     },
     {
       "Route": "_framework/FrontSite.wasm.gz",
-      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-eoqaztu5rj.gz",
+      "AssetFile": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/Debug/net9.0/compressed/311ijtl7mh-n5iwpbdk0e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14133,7 +14133,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31993"
+          "Value": "32175"
         },
         {
           "Name": "Content-Type",
@@ -14141,11 +14141,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA=\""
+          "Value": "\"EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 18:42:19 GMT"
+          "Value": "Fri, 14 Mar 2025 20:02:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14163,7 +14163,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qh0gkiCxJ5YtSgMIbt+XeLqX0nbRuwHyaEGd3WxMWqA="
+          "Value": "sha256-EJkti1leG4GhhjB054aBmAlwKRjkErNo4aa8CKaeS4E="
         }
       ]
     },

@@ -21,7 +21,6 @@
     }
     else
     {
-        <!-- Форма добавления объявления -->
         <div class="ad-form card shadow-sm">
             <div class="card-body">
                 <h5 class="card-title text-orange">Новое объявление</h5>
@@ -42,8 +41,7 @@
                 }
             </div>
         </div>
-
-        <!-- Список объявлений пользователя -->
+        
         <h3 class="text-center text-orange mt-5">Мои объявления</h3>
         <div class="user-ads">
             @if (userAds != null && userAds.Any())
@@ -70,7 +68,6 @@
     }
 </div>
 
-<!-- Диалог подтверждения удаления -->
 @if (isDeleteDialogOpen)
 {
     <div class="delete-dialog-overlay">
@@ -92,14 +89,12 @@
     private bool isAdCreated = false;
     private List<Ad> userAds = new List<Ad>();
     private int? currentUserId;
-
-    // Состояние диалога удаления
+    
     private bool isDeleteDialogOpen = false;
     private int adToDeleteId;
 
     protected override async Task OnInitializedAsync()
     {
-        // Проверяем, авторизован ли пользователь
         var userToken = await LocalStorage.GetItemAsync<string>("user");
         isUserLoggedIn = !string.IsNullOrEmpty(userToken);
 
@@ -109,7 +104,6 @@
         }
         else
         {
-            // Загружаем данные пользователя
             var userJson = await LocalStorage.GetItemAsync<string>("user");
             if (!string.IsNullOrEmpty(userJson))
             {
@@ -122,7 +116,6 @@
                     return;
                 }
 
-                // Загружаем объявления текущего пользователя
                 await LoadUserAds();
             }
         }
