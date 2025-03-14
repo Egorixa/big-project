@@ -1,0 +1,99 @@
+@page "/profile"
+@using Blazored.LocalStorage
+@using FrontSite.Models
+@inject ILocalStorageService localStorage
+@inject NavigationManager Navigation
+
+<PageTitle>Профиль</PageTitle>
+
+<h3 class="text-center text-orange">Профиль</h3>
+
+@if (user == null)
+{
+    <p class="text-center">Загрузка данных...</p>
+}
+else
+{
+    <div class="profile-card">
+        <p><strong>Имя:</strong> @user.Name</p>
+        <p><strong>Фамилия:</strong> @user.Surname</p>
+        <p><strong>Email:</strong> @user.Email</p>
+        <p><strong>Этап образования:</strong> @user.Stage</p>
+        <p><strong>Курс:</strong> @user.Course</p>
+        <p><strong>Описание профиля:</strong> @user.ProfileDescription</p>
+    </div>
+
+    <div class="text-center">
+        <button @onclick="HandleLogout" class="btn btn-danger">Выйти</button>
+    </div>
+}
+
+@code {
+    private User user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await localStorage.GetItemAsync<User>("user");
+
+        if (user == null)
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+
+    private async Task HandleLogout()
+    {
+        await localStorage.RemoveItemAsync("user");
+        
+        Navigation.NavigateTo("/login");
+    }
+}
+
+<style>
+    .profile-card {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff8e1;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        color: #333;
+    }
+    
+    h3 {
+        color: #ff6600;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .btn-danger {
+        background-color: #ff6600;
+        border-color: #ff6600;
+        color: white;
+    }
+
+    .btn-danger:hover {
+        background-color: #cc5200;
+    }
+    
+    .profile-card p {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .text-orange {
+        color: #ff6600;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>

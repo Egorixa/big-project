@@ -1,0 +1,55 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-orange fixed-top shadow-lg">
+    <div class="container">
+        <a class="navbar-brand logo" href="/">
+            <img src="main_icon.png" class="logo-image" alt="UniIcon"/>
+            <span class="brand-text">UniHelper</span>
+        </a>
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="@NavMenuCssClass navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                        <i class="bi bi-house-door"></i> Главная
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/ads">
+                        <i class="bi bi-list"></i> Объявления
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/add-ad">
+                        <i class="bi bi-plus-circle"></i> Добавить
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/profile">
+                        <i class="bi bi-person"></i> Профиль
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/register">
+                        <i class="bi bi-person-plus"></i> Регистрация
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/info">
+                        <i class="bi bi-info-circle"></i> О сервисе
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse navbar-collapse" : "navbar-collapse show";
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
