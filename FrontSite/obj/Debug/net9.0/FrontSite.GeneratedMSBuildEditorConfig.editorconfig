@@ -13,61 +13,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = FrontSite
 build_property.RootNamespace = FrontSite
-build_property.ProjectDir = /Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/
+build_property.ProjectDir = /Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite
+build_property.MSBuildProjectDirectory = /Users/egorkuryukin/Downloads/NIS/frontend/FrontSite
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/App.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/AddAd.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/AddAd.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQWQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Ads.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Ads.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Home.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Info.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Info.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5mby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Login.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Logout.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Logout.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nb3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Profile.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Pages/Register.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/_Imports.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Layout/MainLayout.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-i1qpmni4ew
 
-[/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/Layout/NavMenu.razor]
+[/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2w42qru1za

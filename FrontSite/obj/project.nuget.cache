@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MLdCCn900cI=",
+  "dgSpecHash": "LvddG0oXCNY=",
   "success": true,
-  "projectFilePath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj",
+  "projectFilePath": "/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/FrontSite.csproj",
   "expectedPackageFiles": [
     "/Users/egorkuryukin/.nuget/packages/blazored.localstorage/4.5.0/blazored.localstorage.4.5.0.nupkg.sha512",
     "/Users/egorkuryukin/.nuget/packages/microsoft.aspnetcore.authorization/9.0.3/microsoft.aspnetcore.authorization.9.0.3.nupkg.sha512",
