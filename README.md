@@ -52,22 +52,14 @@
 
 ### Запуск через Docker
 1. Установите [Docker](https://www.docker.com/).
-2. Запустите команду:
+2. Запустите команды по очереди:
    ```bash
-    docker-compose up -d
-   
-### Локальный запуск
-1. Установите .NET SDK.
-2. Настройте подключение к PostgreSQL в appsettings.json.
-3. Запустите миграции базы данных:
-   
-   dotnet ef database update   
-4. Запустите приложение:
-   ```bash
-   dotnet run
-   
-
-
+      docker-compose down
+      docker-compose up --build
+      docker exec -it $(docker ps -qf "name=backend") /bin/sh
+      apt update && apt install -y postgresql-client
+      psql -h db -U admin -d users_ads
+      1234
 ### 4. Функциональные требования
 
 1. **Регистрация и аутентификация пользователей**
