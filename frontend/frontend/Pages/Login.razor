@@ -1,0 +1,115 @@
+@page "/login"
+@using System.ComponentModel.DataAnnotations
+@using Blazored.LocalStorage
+@using frontend.Models
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ILocalStorageService localStorage
+
+<PageTitle>Вход</PageTitle>
+
+<h3 class="text-center text-orange">Войти</h3>
+
+<EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="Email">Электронная почта</label>
+        <InputText id="Email" class="form-control" @bind-Value="loginModel.Email" />
+        <ValidationMessage For="@(() => loginModel.Email)" />
+    </div>
+
+    <div class="form-group">
+        <label for="Password">Пароль</label>
+        <InputText id="Password" class="form-control" type="password" @bind-Value="loginModel.Password" />
+        <ValidationMessage For="@(() => loginModel.Password)" />
+    </div>
+
+    <button type="submit" class="btn btn-orange w-100">Войти</button>
+
+    @if (loginErrorMessage != null)
+    {
+        <div class="alert alert-danger mt-3">
+            @loginErrorMessage
+        </div>
+    }
+</EditForm>
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private string loginErrorMessage;
+
+    private async Task HandleLogin()
+    {
+        if (string.IsNullOrEmpty(loginModel.Email) || !new EmailAddressAttribute().IsValid(loginModel.Email))
+        {
+            loginErrorMessage = "Некорректный формат электронной почты.";
+            return;
+        }
+
+        var response = await Http.PostAsJsonAsync("http://localhost:5027/api/users/login", loginModel);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var user = await response.Content.ReadFromJsonAsync<User>();
+            await localStorage.SetItemAsync("user", user);
+
+            Navigation.NavigateTo("/profile");
+        }
+        else
+        {
+            loginErrorMessage = "Неверные данные для входа. Пожалуйста, попробуйте снова.";
+        }
+    }
+}
+
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ff6600;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .btn-orange {
+        background-color: #ff6600;
+        color: white;
+        width: 100%;
+    }
+
+    .btn-orange:hover {
+        background-color: #cc5200;
+    }
+
+    .alert-danger {
+        margin-top: 15px;
+        background-color: #f8d7da;
+        color: #721c24;
+        border-color: #f5c6cb;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    h3 {
+        color: #ff6600;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>

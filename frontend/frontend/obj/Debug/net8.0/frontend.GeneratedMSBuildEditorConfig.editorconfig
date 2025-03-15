@@ -1,0 +1,71 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = frontend
+build_property.RootNamespace = frontend
+build_property.ProjectDir = /Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/AddAd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Ads.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Info.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5mby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6v5ebjb4ko
+
+[/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jycib1kc17

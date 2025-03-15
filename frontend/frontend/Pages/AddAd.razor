@@ -1,0 +1,351 @@
+@page "/add-ad"
+@using System.Text.Json
+@using Blazored.LocalStorage
+@using frontend.Models
+@using frontend.Services
+@using FrontSite.Services
+@inject AdService AdService
+@inject NavigationManager Navigation
+@inject ILocalStorageService LocalStorage
+
+<PageTitle>Добавить объявление</PageTitle>
+
+<div class="container">
+    <h3 class="text-center text-orange">Добавить объявление</h3>
+
+    @if (!isUserLoggedIn)
+    {
+        <div class="auth-message text-center">
+            <p class="text-danger">Для того чтобы добавлять объявления, пожалуйста, войдите в систему.</p>
+            <NavLink class="btn btn-warning" href="/login">Войти</NavLink>
+        </div>
+    }
+    else
+    {
+        <div class="ad-form card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-orange">Новое объявление</h5>
+                <input @bind="newAd.Title" placeholder="Заголовок" class="form-control mb-3" />
+                <textarea @bind="newAd.Description" placeholder="Описание" class="form-control mb-3" rows="4"></textarea>
+                <input @bind="newAd.Price" placeholder="Цена" class="form-control mb-3" type="number" />
+
+                <button class="btn btn-success w-100" @onclick="CreateAd">Создать</button>
+
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <p class="error-message mt-3">@errorMessage</p>
+                }
+
+                @if (isAdCreated)
+                {
+                    <p class="success-message mt-3">Объявление успешно добавлено!</p>
+                }
+            </div>
+        </div>
+        
+        <h3 class="text-center text-orange mt-5">Мои объявления</h3>
+        <div class="user-ads">
+            @if (userAds != null && userAds.Any())
+            {
+                foreach (var ad in userAds)
+                {
+                    <div class="ad-item card shadow-sm mb-3">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="ad-content">
+                                <h5 class="card-title">@ad.Title</h5>
+                                <p class="card-text">@ad.Description</p>
+                                <p class="card-text text-muted">Цена: <strong>@ad.Price</strong></p>
+                            </div>
+                            <button class="delete-btn btn btn-danger" @onclick="() => OpenDeleteDialog(ad.Id)">Удалить</button>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-center text-muted">У вас пока нет объявлений.</p>
+            }
+        </div>
+    }
+</div>
+
+@if (isDeleteDialogOpen)
+{
+    <div class="delete-dialog-overlay">
+        <div class="delete-dialog">
+            <h4>Подтверждение удаления</h4>
+            <p>Вы уверены, что хотите удалить это объявление?</p>
+            <div class="dialog-buttons">
+                <button class="btn btn-danger" @onclick="ConfirmDelete">Да, удалить</button>
+                <button class="btn btn-secondary" @onclick="CloseDeleteDialog">Отмена</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private Ad newAd = new() { Price = null };
+    private string errorMessage = string.Empty;
+    private bool isUserLoggedIn = false;
+    private bool isAdCreated = false;
+    private List<Ad> userAds = new List<Ad>();
+    private int? currentUserId;
+    
+    private bool isDeleteDialogOpen = false;
+    private int adToDeleteId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var userToken = await LocalStorage.GetItemAsync<string>("user");
+        isUserLoggedIn = !string.IsNullOrEmpty(userToken);
+
+        if (!isUserLoggedIn)
+        {
+            Navigation.NavigateTo("/login");
+        }
+        else
+        {
+            var userJson = await LocalStorage.GetItemAsync<string>("user");
+            if (!string.IsNullOrEmpty(userJson))
+            {
+                var user = JsonSerializer.Deserialize<User>(userJson);
+                currentUserId = user?.Id;
+
+                if (currentUserId == null)
+                {
+                    errorMessage = "Ошибка: не удалось получить ID пользователя!";
+                    return;
+                }
+
+                await LoadUserAds();
+            }
+        }
+    }
+
+    private async Task LoadUserAds()
+    {
+        if (currentUserId.HasValue)
+        {
+            userAds = await AdService.GetUserAdsAsync(currentUserId.Value);
+        }
+    }
+
+    private async Task CreateAd()
+    {
+        errorMessage = string.Empty;
+        isAdCreated = false;
+
+        // Валидация данных
+        if (string.IsNullOrWhiteSpace(newAd.Title) || !newAd.Title.All(c => char.IsLetterOrDigit(c) || c == ' '))
+        {
+            errorMessage = "Заголовок должен содержать только буквы, цифры и пробелы!";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(newAd.Description) || newAd.Description.Length <= 5)
+        {
+            errorMessage = "Описание должно содержать больше 5 символов!";
+            return;
+        }
+
+        if (newAd.Price.HasValue && newAd.Price <= 0)
+        {
+            errorMessage = "Цена должна быть больше 0!";
+            return;
+        }
+
+        // Присваиваем текущую дату и userId
+        newAd.CreatedAt = DateTime.Now;
+        newAd.UserId = (int)currentUserId!;
+
+        // Отправляем запрос на создание объявления
+        bool success = await AdService.CreateAdAsync(newAd);
+        if (success)
+        {
+            isAdCreated = true;
+            newAd = new Ad() { Price = null }; // Очистка формы после успешного добавления
+            await LoadUserAds(); // Обновляем список объявлений
+        }
+        else
+        {
+            errorMessage = "Ошибка при добавлении объявления!";
+        }
+    }
+
+    private void OpenDeleteDialog(int adId)
+    {
+        adToDeleteId = adId;
+        isDeleteDialogOpen = true;
+    }
+
+    private void CloseDeleteDialog()
+    {
+        isDeleteDialogOpen = false;
+    }
+
+    private async Task ConfirmDelete()
+    {
+        if (!currentUserId.HasValue)
+        {
+            errorMessage = "Ошибка: не удалось определить ID пользователя.";
+            return;
+        }
+
+        bool success = await AdService.DeleteAdAsync(adToDeleteId, currentUserId.Value);
+        if (success)
+        {
+            await LoadUserAds(); // Обновляем список объявлений после удаления
+        }
+        else
+        {
+            errorMessage = "Ошибка при удалении объявления!";
+        }
+
+        CloseDeleteDialog();
+    }
+}
+
+<style>
+    /* Глобальные стили */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .text-orange {
+        color: #ff6600;
+    }
+
+    .auth-message {
+        margin-top: 50px;
+    }
+
+    /* Форма добавления */
+    .ad-form {
+        background-color: #fff8e1;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .ad-form .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        border: 1px solid #ff6600;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .btn-success {
+        background-color: #ff6600;
+        border-color: #ff6600;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-success:hover {
+        background-color: #e65c00;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-danger:hover {
+        background-color: #b02a37;
+    }
+
+    /* Сообщения об ошибках и успехе */
+    .error-message {
+        color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .success-message {
+        color: green;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Карточки объявлений */
+    .user-ads {
+        margin-top: 30px;
+    }
+
+    .ad-item {
+        background-color: #fff8e1;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .ad-item .card-title {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .ad-item .card-text {
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .ad-item .card-text strong {
+        color: #ff6600;
+    }
+
+    .delete-btn {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .delete-btn {
+        margin-top: 10px;
+    }
+
+    /* Стили диалога */
+    .delete-dialog-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .delete-dialog {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        max-width: 90%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .delete-dialog h4 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .delete-dialog p {
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    .dialog-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dialog-buttons button {
+        width: 48%;
+    }
+</style>

@@ -1,0 +1,1 @@
+/Users/egorkuryukin/develop/vs_code/projects_.NET/frontend/frontend/publish/web.config

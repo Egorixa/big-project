@@ -1,0 +1,113 @@
+.page[b-i1qpmni4ew] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main[b-i1qpmni4ew] {
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar[b-i1qpmni4ew] {
+    background: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    color: white;
+}
+
+.top-nav[b-i1qpmni4ew] {
+    background-color: #ff7f00;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.top-nav a[b-i1qpmni4ew] {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.top-nav a:hover[b-i1qpmni4ew],
+.top-nav a.active[b-i1qpmni4ew] {
+    background-color: #e66a00;
+}
+
+.main-content[b-i1qpmni4ew] {
+    flex-grow: 1;
+    padding-top: 10px;
+}
+
+.top-row[b-i1qpmni4ew] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.top-row[b-i1qpmni4ew] ,
+.top-row[b-i1qpmni4ew]  {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-row[b-i1qpmni4ew] (a:hover),
+.top-row[b-i1qpmni4ew] (.btn-link:hover) {
+    text-decoration: underline;
+}
+
+.top-row[b-i1qpmni4ew] (a:first-child) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 641px) {
+    .top-row[b-i1qpmni4ew] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-i1qpmni4ew] (a),
+    .top-row[b-i1qpmni4ew] (.btn-link) {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-i1qpmni4ew] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-i1qpmni4ew] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-i1qpmni4ew] {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .top-row.auth[b-i1qpmni4ew] (a:first-child) {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-i1qpmni4ew], article[b-i1qpmni4ew] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
