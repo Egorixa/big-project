@@ -47,14 +47,14 @@
             loginErrorMessage = "Некорректный формат электронной почты.";
             return;
         }
-        
+
         var response = await Http.PostAsJsonAsync("http://localhost:5027/api/users/login", loginModel);
 
         if (response.IsSuccessStatusCode)
         {
             var user = await response.Content.ReadFromJsonAsync<User>();
             await localStorage.SetItemAsync("user", user);
-            
+
             Navigation.NavigateTo("/profile");
         }
         else
@@ -102,13 +102,13 @@
         padding: 15px;
         border-radius: 5px;
     }
-    
+
     h3 {
         color: #ff6600;
         font-weight: bold;
         margin-bottom: 20px;
     }
-    
+
     .text-center {
         text-align: center;
     }

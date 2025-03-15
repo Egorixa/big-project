@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/FrontSite.csproj": {}
+    "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj": {}
   },
   "projects": {
-    "/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/FrontSite.csproj": {
+    "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/FrontSite.csproj",
+        "projectUniqueName": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj",
         "projectName": "FrontSite",
-        "projectPath": "/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/FrontSite.csproj",
+        "projectPath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/FrontSite.csproj",
         "packagesPath": "/Users/egorkuryukin/.nuget/packages/",
-        "outputPath": "/Users/egorkuryukin/Downloads/NIS/frontend/FrontSite/obj/",
+        "outputPath": "/Users/egorkuryukin/develop/vs_code/projects_.NET/FrontSite/FrontSite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/egorkuryukin/.nuget/NuGet/NuGet.Config"
